@@ -264,6 +264,7 @@ namespace QLSV_TEST2
             //                            DTB = u.DTB,
             //                            MaLop = u.MaLop
             //                        };
+
             MessageBox.Show("Sắp xếp thành công", "Sort");
             frmSortZA f = new frmSortZA();
             f.ShowDialog();
