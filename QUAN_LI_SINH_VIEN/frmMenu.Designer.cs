@@ -62,7 +62,7 @@ namespace QLSV_TEST2
             this.btnGT.Name = "btnGT";
             this.btnGT.Size = new System.Drawing.Size(154, 52);
             this.btnGT.TabIndex = 1;
-            this.btnGT.Text = "Giới thiệu";
+            this.btnGT.Text = "Hướng dẫn";
             this.btnGT.UseVisualStyleBackColor = false;
             this.btnGT.Click += new System.EventHandler(this.btnGT_Click);
             // 

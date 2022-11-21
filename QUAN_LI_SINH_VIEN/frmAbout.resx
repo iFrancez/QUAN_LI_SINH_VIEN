@@ -117,4 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Hướng dẫn:
+* Quản lý sinh viên gồm có
+- Thông tin:
++ Cập nhật: bấm cập nhật để cập nhật danh sách sinh viên mới nhất (hoặc bấm nút thông tin ở MenuStrip hoặc dùng phím tắt Shift + A)
++ Tìm: bấm vào ở textbox kế bên nút tìm kiếm sau đó nhập: mã học sinh hoặc họ tên học sinh hoặc điểm trung bình hoặc mã lớp mà sinh viên muốn tìm sau đó bấm tìm 
+(hoặc bấm nút tìm ở MenuStrip hoặc dùng phím tắt Ctrl + F)
++ Thoát: bấm vào nút thoát để thoát chương trình (hoặc bấm nút thoát ở MenuStrip hoặc dùng phím tắt Alt + F4)
+- Những thao tác cơ bản như: thêm, xoá, sửa, khởi tạo sinh viên
++ Thêm: bấm vào groupbox thông tin chi tiết sau đó lần lượt thêm Mã học sinh, họ và tên, ngày sinh, địa chỉ, điểm trung bình (DTB)
+, mã lớp và phái sau đó bấm nút thêm (hoặc bấm nút thêm ở MenuStrip hoặc dùng phím tắt Ctrl + A)
++ Xoá: bấm vào datagridview có hiện danh sách sinh viên sau đó bấm vào tên sinh viên muốn xoá và bấm xoá
+ (hoặc bấm nút xoá ở MenuStrip hoặc dùng phím tắt Crtl + Del)
++ Sửa: bấm vào datagridview có hiện danh sách sinh viên sau đó bấm vào tên sinh viên muốn sửa và nhập vào thông tin muốn sửa ở thông tin chi tiết và bấm nút sửa 
+(hoặc bấm nút sửa ở MenuStrip hoặc dùng phím tắt Ctrl + E)
++ Khởi tạo: bấm vào nút khởi tạo thì trong thông tin chi tiết sẽ để trống để mình có thể nhập vào
+- Ngoài ra còn có các thao tác khác như:
++ Sắp xếp họ hoặc tên từ A -&gt; Z (hoặc bấm nút sort A -&gt; Z ở trên MenuStrip)
++ Sắp xếp họ hoặc tên từ Z -&gt; A (hoặc bấm nút sort Z -&gt; A ở trên MenuStrip)
++ Sắp xếp theo lớp (hoặc bấm nút sort class ở trên MenuStrip)
++ Lấy ra những sinh viên qua môn (hoặc bấm nút qua môn ở trên MenuStrip)
++ Lấy ra những sinh viên rớt môn (hoặc bấm nút rớt môn ở trên MenuStrip)
++ Lấy ra những sinh viên có điểm trung bình không hợp lệ (hoặc bấm không hợp lệ ở trên MenuStrip)
+- Sau khi chỉnh sửa xong thì bấm xuất file report (hoặc bấm in ấnở trên MenuStrip)</value>
+  </data>
 </root>

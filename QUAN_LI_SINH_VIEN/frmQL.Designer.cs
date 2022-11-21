@@ -81,6 +81,7 @@
             this.sortByClassToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quaMônToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rớtMônToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.khôngHợpLệToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnDx = new System.Windows.Forms.Button();
             this.btnMini = new System.Windows.Forms.PictureBox();
@@ -433,7 +434,7 @@
             this.groupBox3.Size = new System.Drawing.Size(654, 128);
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Các thao tác cơ bản";
+            this.groupBox3.Text = "Thông tin và các thao tác cơ bản";
             // 
             // sortZA
             // 
@@ -664,7 +665,8 @@
             this.sortZAToolStripMenuItem,
             this.sortByClassToolStripMenuItem,
             this.quaMônToolStripMenuItem,
-            this.rớtMônToolStripMenuItem});
+            this.rớtMônToolStripMenuItem,
+            this.khôngHợpLệToolStripMenuItem});
             this.cácThaoTácKhácToolStripMenuItem.Image = global::QLSV_TEST2.Properties.Resources.Games;
             this.cácThaoTácKhácToolStripMenuItem.Name = "cácThaoTácKhácToolStripMenuItem";
             this.cácThaoTácKhácToolStripMenuItem.Size = new System.Drawing.Size(213, 32);
@@ -674,7 +676,7 @@
             // 
             this.sortAZToolStripMenuItem.Image = global::QLSV_TEST2.Properties.Resources.meeting_icon;
             this.sortAZToolStripMenuItem.Name = "sortAZToolStripMenuItem";
-            this.sortAZToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.sortAZToolStripMenuItem.Size = new System.Drawing.Size(225, 32);
             this.sortAZToolStripMenuItem.Text = "Sort A->Z";
             this.sortAZToolStripMenuItem.Click += new System.EventHandler(this.sortAZ_Click);
             // 
@@ -682,7 +684,7 @@
             // 
             this.sortZAToolStripMenuItem.Image = global::QLSV_TEST2.Properties.Resources.meeting_icon;
             this.sortZAToolStripMenuItem.Name = "sortZAToolStripMenuItem";
-            this.sortZAToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.sortZAToolStripMenuItem.Size = new System.Drawing.Size(225, 32);
             this.sortZAToolStripMenuItem.Text = "Sort Z->A";
             this.sortZAToolStripMenuItem.Click += new System.EventHandler(this.sortZA_Click);
             // 
@@ -690,7 +692,7 @@
             // 
             this.sortByClassToolStripMenuItem.Image = global::QLSV_TEST2.Properties.Resources.Group;
             this.sortByClassToolStripMenuItem.Name = "sortByClassToolStripMenuItem";
-            this.sortByClassToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.sortByClassToolStripMenuItem.Size = new System.Drawing.Size(225, 32);
             this.sortByClassToolStripMenuItem.Text = "Sort by class";
             this.sortByClassToolStripMenuItem.Click += new System.EventHandler(this.btnClass_Click);
             // 
@@ -698,7 +700,7 @@
             // 
             this.quaMônToolStripMenuItem.Image = global::QLSV_TEST2.Properties.Resources.checkin;
             this.quaMônToolStripMenuItem.Name = "quaMônToolStripMenuItem";
-            this.quaMônToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.quaMônToolStripMenuItem.Size = new System.Drawing.Size(225, 32);
             this.quaMônToolStripMenuItem.Text = "Qua môn";
             this.quaMônToolStripMenuItem.Click += new System.EventHandler(this.btnpass_Click);
             // 
@@ -706,9 +708,17 @@
             // 
             this.rớtMônToolStripMenuItem.Image = global::QLSV_TEST2.Properties.Resources.NHAN1;
             this.rớtMônToolStripMenuItem.Name = "rớtMônToolStripMenuItem";
-            this.rớtMônToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
+            this.rớtMônToolStripMenuItem.Size = new System.Drawing.Size(225, 32);
             this.rớtMônToolStripMenuItem.Text = "Rớt môn";
             this.rớtMônToolStripMenuItem.Click += new System.EventHandler(this.btnfalse_Click);
+            // 
+            // khôngHợpLệToolStripMenuItem
+            // 
+            this.khôngHợpLệToolStripMenuItem.Image = global::QLSV_TEST2.Properties.Resources.MISC02;
+            this.khôngHợpLệToolStripMenuItem.Name = "khôngHợpLệToolStripMenuItem";
+            this.khôngHợpLệToolStripMenuItem.Size = new System.Drawing.Size(225, 32);
+            this.khôngHợpLệToolStripMenuItem.Text = "Không hợp lệ";
+            this.khôngHợpLệToolStripMenuItem.Click += new System.EventHandler(this.btnKHL_Click);
             // 
             // iToolStripMenuItem
             // 
@@ -853,6 +863,7 @@
         private System.Windows.Forms.ComboBox txtMaLop;
         private System.Windows.Forms.ComboBox Phai;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ToolStripMenuItem khôngHợpLệToolStripMenuItem;
     }
 }
 

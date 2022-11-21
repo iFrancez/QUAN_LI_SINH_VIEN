@@ -173,6 +173,16 @@ namespace QLSV_TEST2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logoSuphamtphcm {
+            get {
+                object obj = ResourceManager.GetObject("logoSuphamtphcm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap meeting_icon {
             get {
                 object obj = ResourceManager.GetObject("meeting-icon", resourceCulture);
@@ -186,6 +196,16 @@ namespace QLSV_TEST2.Properties {
         internal static System.Drawing.Bitmap minimize {
             get {
                 object obj = ResourceManager.GetObject("minimize", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MISC02 {
+            get {
+                object obj = ResourceManager.GetObject("MISC02", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

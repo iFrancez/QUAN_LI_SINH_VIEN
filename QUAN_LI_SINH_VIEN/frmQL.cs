@@ -225,7 +225,7 @@ namespace QLSV_TEST2
                                         DiaChi = u.DiaChi,
                                         DTB = u.DTB,
                                         MaLop = u.MaLop,
-                                        Phai =u.Phái
+                                        Phai = u.Phái
                                     };
             if (DtDanhSach.RowCount > 0) MessageBox.Show("Tìm thành công", "Tìm");
             else MessageBox.Show("Không tìm sinh viên trong danh sách", "Tìm");

@@ -16,5 +16,10 @@ namespace QLSV_TEST2
         {
             InitializeComponent();
         }
+
+        private void btnQL_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
