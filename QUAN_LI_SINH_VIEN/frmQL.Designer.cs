@@ -254,7 +254,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(69, 137);
+            this.label4.Location = new System.Drawing.Point(46, 137);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 25);
             this.label4.TabIndex = 0;
@@ -264,7 +264,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(69, 101);
+            this.label3.Location = new System.Drawing.Point(46, 101);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(108, 25);
             this.label3.TabIndex = 0;
@@ -274,7 +274,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(69, 65);
+            this.label2.Location = new System.Drawing.Point(46, 65);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(104, 25);
             this.label2.TabIndex = 0;
@@ -284,11 +284,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(69, 31);
+            this.label1.Location = new System.Drawing.Point(46, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 25);
+            this.label1.Size = new System.Drawing.Size(129, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "MaHS";
+            this.label1.Text = "Mã học sinh";
             // 
             // btnThem
             // 
@@ -568,6 +568,7 @@
             this.iToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(1135, 36);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";

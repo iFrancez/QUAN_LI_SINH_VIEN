@@ -80,9 +80,6 @@ namespace QLSV_TEST2
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
-            ////nguoi dung chi dc doc
-            //txtMaHS.ReadOnly = true;
             int i;
             i = DtDanhSach.CurrentRow.Index;
             txtMaHS.Text = DtDanhSach.Rows[i].Cells[0].Value.ToString();
@@ -214,7 +211,6 @@ namespace QLSV_TEST2
         {
 
             QLSVDataContext db = new QLSVDataContext();
-            //dataGridView1.DataSource = db.HocSinhs.Where(d => d.MaHS.Equals(txtTim.Text));
             DtDanhSach.DataSource = from u in db.HocSinhs
                                     where u.MaHS == txtTim.Text || u.TenHS == txtTim.Text || u.DTB.ToString() == txtTim.Text || u.DiaChi == txtTim.Text || u.MaLop == txtTim.Text
                                     select new
@@ -233,18 +229,6 @@ namespace QLSV_TEST2
 
         private void sortAZ_Click(object sender, EventArgs e)
         {
-            //QLSVDataContext db = new QLSVDataContext();
-            //DtDanhSach.DataSource = from u in db.HocSinhs
-            //                        orderby u.TenHS ascending
-            //                        select new
-            //                        {
-            //                            MaHS = u.MaHS,
-            //                            TenHS = u.TenHS,
-            //                            NgaySinh = u.NgaySinh,
-            //                            DiaChi = u.DiaChi,
-            //                            DTB = u.DTB,
-            //                            MaLop = u.MaLop
-            //                        };
             MessageBox.Show("Sắp xếp thành công", "Sort");
             frmSortAZ f = new frmSortAZ();
             f.ShowDialog();
@@ -252,37 +236,12 @@ namespace QLSV_TEST2
 
         private void sortZA_Click(object sender, EventArgs e)
         {
-            //QLSVDataContext db = new QLSVDataContext();
-            //DtDanhSach.DataSource = from u in db.HocSinhs
-            //                        orderby u.TenHS descending
-            //                        select new
-            //                        {
-            //                            MaHS = u.MaHS,
-            //                            TenHS = u.TenHS,
-            //                            NgaySinh = u.NgaySinh,
-            //                            DiaChi = u.DiaChi,
-            //                            DTB = u.DTB,
-            //                            MaLop = u.MaLop
-            //                        };
-
             MessageBox.Show("Sắp xếp thành công", "Sort");
             frmSortZA f = new frmSortZA();
             f.ShowDialog();
         }
         private void btnClass_Click(object sender, EventArgs e)
         {
-            //QLSVDataContext db = new QLSVDataContext();
-            //DtDanhSach.DataSource = from u in db.HocSinhs
-            //                        orderby u.MaLop ascending, u.MaHS ascending
-            //                        select new
-            //                        {
-            //                            MaHS = u.MaHS,
-            //                            TenHS = u.TenHS,
-            //                            NgaySinh = u.NgaySinh,
-            //                            DiaChi = u.DiaChi,
-            //                            DTB = u.DTB,
-            //                            MaLop = u.MaLop
-            //                        };
             MessageBox.Show("Sắp xếp theo lớp thành công", "Sort");
             frmClass f = new frmClass();
             f.ShowDialog();
