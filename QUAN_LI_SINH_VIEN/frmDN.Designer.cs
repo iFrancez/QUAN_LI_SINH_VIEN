@@ -38,16 +38,18 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnMini = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMini)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(91, 58);
+            this.label1.Location = new System.Drawing.Point(186, 65);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(137, 32);
             this.label1.TabIndex = 0;
@@ -57,7 +59,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(96, 118);
+            this.label2.Location = new System.Drawing.Point(188, 105);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 32);
             this.label2.TabIndex = 0;
@@ -66,7 +68,7 @@
             // txtTK
             // 
             this.txtTK.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTK.Location = new System.Drawing.Point(237, 57);
+            this.txtTK.Location = new System.Drawing.Point(332, 64);
             this.txtTK.Name = "txtTK";
             this.txtTK.Size = new System.Drawing.Size(341, 34);
             this.txtTK.TabIndex = 1;
@@ -74,7 +76,7 @@
             // txtMK
             // 
             this.txtMK.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtMK.Location = new System.Drawing.Point(237, 117);
+            this.txtMK.Location = new System.Drawing.Point(332, 104);
             this.txtMK.Name = "txtMK";
             this.txtMK.PasswordChar = '☼';
             this.txtMK.Size = new System.Drawing.Size(341, 34);
@@ -140,6 +142,17 @@
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::QLSV_TEST2.Properties.Resources.user1;
+            this.pictureBox3.Location = new System.Drawing.Point(38, 48);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(129, 124);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            // 
             // frmDN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -148,6 +161,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(699, 217);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnMini);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
@@ -164,6 +178,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMini)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,5 +195,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox btnMini;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

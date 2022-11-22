@@ -384,6 +384,8 @@
     <None Include="Resources\PRINT.ICO" />
     <None Include="Resources\MISC02.ICO" />
     <None Include="Resources\logoSuphamtphcm.png" />
+    <None Include="Resources\user.jpg" />
+    <None Include="Resources\user1.jpg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
