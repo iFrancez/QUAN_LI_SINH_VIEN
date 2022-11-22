@@ -784,7 +784,7 @@
             this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem});
             this.bIểuĐồToolStripMenuItem.Name = "bIểuĐồToolStripMenuItem";
             this.bIểuĐồToolStripMenuItem.Size = new System.Drawing.Size(99, 32);
-            this.bIểuĐồToolStripMenuItem.Text = "BIểu đồ";
+            this.bIểuĐồToolStripMenuItem.Text = "Biểu đồ";
             // 
             // biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem
             // 
