@@ -35,7 +35,5 @@ namespace QLSV_TEST2
                 chartCot.Series["SiSo"].Points.AddXY(dt.Rows[i]["MaLop"], dt.Rows[i]["SiSo"]);
             }
         }
-
-
     }
 }
