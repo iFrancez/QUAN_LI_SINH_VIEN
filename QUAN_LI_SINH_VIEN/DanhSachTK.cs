@@ -10,14 +10,14 @@ namespace QLSV_TEST2
     {
         //han che loi
         private static DanhSachTK instance;
-        public static DanhSachTK Instance 
+        public static DanhSachTK Instance
         {
             get
             {
                 if (instance == null) instance = new DanhSachTK();
                 return instance;
             }
-            set => instance = value; 
+            set => instance = value;
         }
         //
         List<Taikhoan> listTaiKhoan;
