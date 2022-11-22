@@ -31,20 +31,30 @@ namespace QLSV_TEST2
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.DSsinhvientheogioitinhBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.QLSVDataSet1 = new QLSV_TEST2.QLSVDataSet1();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.btntim = new System.Windows.Forms.Button();
             this.txtGioiTinh = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.QLSVDataSet1 = new QLSV_TEST2.QLSVDataSet1();
-            this.DSsinhvientheogioitinhBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DSsinhvientheogioitinhTableAdapter = new QLSV_TEST2.QLSVDataSet1TableAdapters.DSsinhvientheogioitinhTableAdapter();
             this.label3 = new System.Windows.Forms.Label();
             this.lblThoigan = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblNgay = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.QLSVDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DSsinhvientheogioitinhBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QLSVDataSet1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // DSsinhvientheogioitinhBindingSource
+            // 
+            this.DSsinhvientheogioitinhBindingSource.DataMember = "DSsinhvientheogioitinh";
+            this.DSsinhvientheogioitinhBindingSource.DataSource = this.QLSVDataSet1;
+            // 
+            // QLSVDataSet1
+            // 
+            this.QLSVDataSet1.DataSetName = "QLSVDataSet1";
+            this.QLSVDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -86,16 +96,6 @@ namespace QLSV_TEST2
             this.label1.Size = new System.Drawing.Size(144, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "Nhập giới tính";
-            // 
-            // QLSVDataSet1
-            // 
-            this.QLSVDataSet1.DataSetName = "QLSVDataSet1";
-            this.QLSVDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // DSsinhvientheogioitinhBindingSource
-            // 
-            this.DSsinhvientheogioitinhBindingSource.DataMember = "DSsinhvientheogioitinh";
-            this.DSsinhvientheogioitinhBindingSource.DataSource = this.QLSVDataSet1;
             // 
             // DSsinhvientheogioitinhTableAdapter
             // 
@@ -155,10 +155,11 @@ namespace QLSV_TEST2
             this.Controls.Add(this.label1);
             this.Controls.Add(this.reportViewer1);
             this.Name = "frmgioitinh";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh sách sinh viên theo giới tính";
             this.Load += new System.EventHandler(this.frmgioitinh_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.QLSVDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DSsinhvientheogioitinhBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QLSVDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
