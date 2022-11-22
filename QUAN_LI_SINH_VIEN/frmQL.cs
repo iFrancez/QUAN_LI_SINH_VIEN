@@ -69,7 +69,6 @@ namespace QLSV_TEST2
             btnClass.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnClass.Width, btnClass.Height, 30, 30));
             btnExit.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnExit.Width, btnExit.Height, 30, 30));
             btnDx.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnDx.Width, btnDx.Height, 30, 30));
-            btnINAN.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnINAN.Width, btnINAN.Height, 30, 30));
             btnKHL.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnKHL.Width, btnKHL.Height, 30, 30));
             //
             connection = new SqlConnection(str);
@@ -339,11 +338,23 @@ namespace QLSV_TEST2
         {
             this.WindowState = FormWindowState.Minimized;
         }
-        private void btnINAN_Click(object sender, EventArgs e)
+
+        private void inẤnDanhSáchSinhViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmInAn dn = new frmInAn();
-            dn.Show();
-            MessageBox.Show("In ấn thành công", "Report");
+            dn.ShowDialog();
+        }
+
+        private void inẤnDanhSáchTheoLớpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmdssvtheolop f = new frmdssvtheolop();
+            f.ShowDialog();
+        }
+
+        private void inẤnDanhSáchTheoGiớiTínhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmgioitinh f = new frmgioitinh();
+            f.ShowDialog();
         }
     }
 }

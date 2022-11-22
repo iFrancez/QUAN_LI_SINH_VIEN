@@ -6,25 +6,28 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>0.85416in</Width>
+              <Width>1in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.08752in</Width>
+              <Width>1in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.03333in</Width>
+              <Width>1in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.02917in</Width>
+              <Width>1in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.80416in</Width>
+              <Width>1in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.79166in</Width>
+              <Width>1in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.54167in</Width>
+              <Width>1in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -33,16 +36,18 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox1">
+                    <Textbox Name="Textbox2">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Mã học sinh</Value>
+                              <Value>STT</Value>
                               <Style>
+                                <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
+                                <Color>#666666</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -51,12 +56,12 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox1</rd:DefaultName>
+                      <rd:DefaultName>Textbox2</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -74,9 +79,11 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Họ và tên</Value>
+                              <Value>Mã học sinh</Value>
                               <Style>
+                                <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
+                                <Color>#666666</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -88,9 +95,9 @@
                       <rd:DefaultName>Textbox3</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -108,9 +115,11 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Ngày sinh</Value>
+                              <Value>Họ và tên</Value>
                               <Style>
+                                <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
+                                <Color>#666666</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -122,9 +131,9 @@
                       <rd:DefaultName>Textbox5</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -142,9 +151,11 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Địa chỉ</Value>
+                              <Value>Ngày sinh</Value>
                               <Style>
+                                <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
+                                <Color>#666666</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -156,9 +167,9 @@
                       <rd:DefaultName>Textbox7</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -176,9 +187,11 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>DTB</Value>
+                              <Value>Địa chỉ</Value>
                               <Style>
+                                <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
+                                <Color>#666666</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -190,9 +203,9 @@
                       <rd:DefaultName>Textbox9</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -210,9 +223,11 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Mã lớp</Value>
+                              <Value>DTB</Value>
                               <Style>
+                                <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
+                                <Color>#666666</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -224,9 +239,9 @@
                       <rd:DefaultName>Textbox11</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -237,16 +252,18 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox2">
+                    <Textbox Name="Textbox13">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Phái</Value>
+                              <Value>Mã lớp</Value>
                               <Style>
+                                <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
+                                <Color>#666666</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -255,12 +272,48 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox2</rd:DefaultName>
+                      <rd:DefaultName>Textbox13</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>White</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox15">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Phái</Value>
+                              <Style>
+                                <FontSize>11pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>#666666</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox15</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -276,6 +329,41 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
+                    <Textbox Name="STT">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!STT.Value</Value>
+                              <Style>
+                                <FontWeight>Normal</FontWeight>
+                                <Color>#333333</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>STT</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>White</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
                     <Textbox Name="MaHS">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
@@ -284,20 +372,21 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!MaHS.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Normal</FontWeight>
+                                <Color>#333333</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style>
-                            <TextAlign>Center</TextAlign>
-                          </Style>
+                          <Style />
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>MaHS</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -316,7 +405,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!TenHS.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Normal</FontWeight>
+                                <Color>#333333</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -325,9 +417,9 @@
                       <rd:DefaultName>TenHS</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -347,7 +439,9 @@
                             <TextRun>
                               <Value>=Fields!NgaySinh.Value</Value>
                               <Style>
-                                <Format>dd/MM/yyyy</Format>
+                                <FontWeight>Normal</FontWeight>
+                                <Format>d</Format>
+                                <Color>#333333</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -357,9 +451,9 @@
                       <rd:DefaultName>NgaySinh</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -378,7 +472,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!DiaChi.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Normal</FontWeight>
+                                <Color>#333333</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -387,9 +484,9 @@
                       <rd:DefaultName>DiaChi</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -409,7 +506,9 @@
                             <TextRun>
                               <Value>=Fields!DTB.Value</Value>
                               <Style>
+                                <FontWeight>Normal</FontWeight>
                                 <Format>0.00;(0.00)</Format>
+                                <Color>#333333</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -421,9 +520,9 @@
                       <rd:DefaultName>DTB</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -442,7 +541,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!MaLop.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Normal</FontWeight>
+                                <Color>#333333</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -453,9 +555,9 @@
                       <rd:DefaultName>MaLop</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -474,7 +576,10 @@
                           <TextRuns>
                             <TextRun>
                               <Value>=Fields!Phái.Value</Value>
-                              <Style />
+                              <Style>
+                                <FontWeight>Normal</FontWeight>
+                                <Color>#333333</Color>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -485,15 +590,16 @@
                       <rd:DefaultName>Phái</rd:DefaultName>
                       <Style>
                         <Border>
-                          <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>White</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -502,6 +608,7 @@
         </TablixBody>
         <TablixColumnHierarchy>
           <TablixMembers>
+            <TablixMember />
             <TablixMember />
             <TablixMember />
             <TablixMember />
@@ -521,24 +628,24 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>HocSinh</DataSetName>
-        <Top>0.75in</Top>
+        <DataSetName>DSsinhvientheolop</DataSetName>
+        <Top>0.69167in</Top>
         <Height>0.5in</Height>
-        <Width>6.14167in</Width>
+        <Width>8in</Width>
         <Style>
           <Border>
-            <Style>Solid</Style>
+            <Style>None</Style>
           </Border>
         </Style>
       </Tablix>
-      <Textbox Name="Textbox15">
+      <Textbox Name="Textbox17">
         <CanGrow>true</CanGrow>
         <KeepTogether>true</KeepTogether>
         <Paragraphs>
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>DANH SÁCH SINH VIÊN</Value>
+                <Value>DANH SÁCH SINH VIÊN THEO LỚP</Value>
                 <Style>
                   <FontSize>14pt</FontSize>
                   <FontWeight>Bold</FontWeight>
@@ -550,11 +657,11 @@
             </Style>
           </Paragraph>
         </Paragraphs>
-        <rd:DefaultName>Textbox15</rd:DefaultName>
-        <Top>0.24667in</Top>
-        <Left>1.27167in</Left>
+        <rd:DefaultName>Textbox17</rd:DefaultName>
+        <Top>0.23833in</Top>
+        <Left>2.39167in</Left>
         <Height>0.25in</Height>
-        <Width>3.21667in</Width>
+        <Width>3.60833in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -566,70 +673,8 @@
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
-      <Textbox Name="Textbox16">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>TPHCM, Ngày....tháng.....năm......</Value>
-                <Style>
-                  <FontSize>11pt</FontSize>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>Textbox16</rd:DefaultName>
-        <Top>1.31944in</Top>
-        <Left>3.38668in</Left>
-        <Height>0.25in</Height>
-        <Width>2.75499in</Width>
-        <ZIndex>2</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="Textbox17">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>Người lập bản</Value>
-                <Style />
-              </TextRun>
-            </TextRuns>
-            <Style />
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>Textbox17</rd:DefaultName>
-        <Top>1.63889in</Top>
-        <Left>4.39585in</Left>
-        <Height>0.25in</Height>
-        <Width>1in</Width>
-        <ZIndex>3</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
     </ReportItems>
-    <Height>2.475in</Height>
+    <Height>2in</Height>
     <Style>
       <Border>
         <Style>None</Style>
@@ -640,7 +685,7 @@
       </BackgroundImage>
     </Style>
   </Body>
-  <Width>6.325in</Width>
+  <Width>8in</Width>
   <Page>
     <LeftMargin>1in</LeftMargin>
     <RightMargin>1in</RightMargin>
@@ -650,21 +695,25 @@
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="QLSVDataSet">
+    <DataSource Name="dssinhvien_lop">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>6c8ab7d4-ac02-4ac8-9937-8b399ab3c4ab</rd:DataSourceID>
+      <rd:DataSourceID>87f5fbf6-dff6-47c9-9c00-d091170dce21</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="HocSinh">
+    <DataSet Name="DSsinhvientheolop">
       <Query>
-        <DataSourceName>QLSVDataSet</DataSourceName>
+        <DataSourceName>dssinhvien_lop</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
+        <Field Name="STT">
+          <DataField>STT</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
         <Field Name="MaHS">
           <DataField>MaHS</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -695,12 +744,12 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>QLSVDataSet</rd:DataSetName>
-        <rd:SchemaPath>D:\QUAN-LI-SINH-VIEN-master\QUAN_LI_SINH_VIEN\QLSVDataSet.xsd</rd:SchemaPath>
-        <rd:TableName>HocSinh</rd:TableName>
+        <rd:DataSetName>dssinhvien_lop</rd:DataSetName>
+        <rd:SchemaPath>D:\ProjectQLSV\QUAN-LI-SINH-VIEN-master\QUAN_LI_SINH_VIEN\dssinhvien_lop.xsd</rd:SchemaPath>
+        <rd:TableName>DSsinhvientheolop</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>HocSinhTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>DSsinhvientheolopTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
@@ -3621,5 +3670,5 @@ cHeq5SsnUuldWwsvS8Zv7thQute9feKl0rq2C9Lxm/u2GDJqlKro1a3Kvdq0CurIYqTl7V2msute9feb
     </EmbeddedImage>
   </EmbeddedImages>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>fc61bfea-5e9c-41f7-a96c-d84b21f223b3</rd:ReportID>
+  <rd:ReportID>082d631f-e066-47c5-910c-b7e4960633eb</rd:ReportID>
 </Report>

@@ -62,7 +62,6 @@
             this.btnClass = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.btnKHL = new System.Windows.Forms.Button();
-            this.btnINAN = new System.Windows.Forms.Button();
             this.btnfalse = new System.Windows.Forms.Button();
             this.btnpass = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -83,9 +82,12 @@
             this.rớtMônToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.khôngHợpLệToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inẤnDanhSáchSinhViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inẤnDanhSáchTheoLớpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnDx = new System.Windows.Forms.Button();
             this.btnMini = new System.Windows.Forms.PictureBox();
             this.btnThoat = new System.Windows.Forms.PictureBox();
+            this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtDanhSach)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -484,7 +486,6 @@
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
             this.groupBox4.Controls.Add(this.btnKHL);
-            this.groupBox4.Controls.Add(this.btnINAN);
             this.groupBox4.Controls.Add(this.btnfalse);
             this.groupBox4.Controls.Add(this.btnpass);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -502,29 +503,13 @@
             this.btnKHL.FlatAppearance.BorderSize = 0;
             this.btnKHL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKHL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnKHL.Location = new System.Drawing.Point(23, 113);
+            this.btnKHL.Location = new System.Drawing.Point(23, 137);
             this.btnKHL.Name = "btnKHL";
             this.btnKHL.Size = new System.Drawing.Size(154, 32);
             this.btnKHL.TabIndex = 10;
             this.btnKHL.Text = "Không hợp lệ";
             this.btnKHL.UseVisualStyleBackColor = false;
             this.btnKHL.Click += new System.EventHandler(this.btnKHL_Click);
-            // 
-            // btnINAN
-            // 
-            this.btnINAN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnINAN.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnINAN.FlatAppearance.BorderSize = 0;
-            this.btnINAN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnINAN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnINAN.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnINAN.Location = new System.Drawing.Point(23, 151);
-            this.btnINAN.Name = "btnINAN";
-            this.btnINAN.Size = new System.Drawing.Size(154, 32);
-            this.btnINAN.TabIndex = 14;
-            this.btnINAN.Text = "In ấn";
-            this.btnINAN.UseVisualStyleBackColor = false;
-            this.btnINAN.Click += new System.EventHandler(this.btnINAN_Click);
             // 
             // btnfalse
             // 
@@ -533,7 +518,7 @@
             this.btnfalse.FlatAppearance.BorderSize = 0;
             this.btnfalse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnfalse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnfalse.Location = new System.Drawing.Point(23, 72);
+            this.btnfalse.Location = new System.Drawing.Point(23, 96);
             this.btnfalse.Name = "btnfalse";
             this.btnfalse.Size = new System.Drawing.Size(154, 35);
             this.btnfalse.TabIndex = 0;
@@ -548,7 +533,7 @@
             this.btnpass.FlatAppearance.BorderSize = 0;
             this.btnpass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnpass.Location = new System.Drawing.Point(23, 31);
+            this.btnpass.Location = new System.Drawing.Point(23, 55);
             this.btnpass.Name = "btnpass";
             this.btnpass.Size = new System.Drawing.Size(154, 35);
             this.btnpass.TabIndex = 0;
@@ -568,7 +553,6 @@
             this.iToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(1135, 36);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
@@ -723,11 +707,28 @@
             // 
             // iToolStripMenuItem
             // 
+            this.iToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inẤnDanhSáchSinhViênToolStripMenuItem,
+            this.inẤnDanhSáchTheoLớpToolStripMenuItem,
+            this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem});
             this.iToolStripMenuItem.Image = global::QLSV_TEST2.Properties.Resources.PRINT;
             this.iToolStripMenuItem.Name = "iToolStripMenuItem";
             this.iToolStripMenuItem.Size = new System.Drawing.Size(93, 32);
             this.iToolStripMenuItem.Text = "In ấn";
-            this.iToolStripMenuItem.Click += new System.EventHandler(this.btnINAN_Click);
+            // 
+            // inẤnDanhSáchSinhViênToolStripMenuItem
+            // 
+            this.inẤnDanhSáchSinhViênToolStripMenuItem.Name = "inẤnDanhSáchSinhViênToolStripMenuItem";
+            this.inẤnDanhSáchSinhViênToolStripMenuItem.Size = new System.Drawing.Size(382, 32);
+            this.inẤnDanhSáchSinhViênToolStripMenuItem.Text = "In ấn danh sách sinh viên";
+            this.inẤnDanhSáchSinhViênToolStripMenuItem.Click += new System.EventHandler(this.inẤnDanhSáchSinhViênToolStripMenuItem_Click);
+            // 
+            // inẤnDanhSáchTheoLớpToolStripMenuItem
+            // 
+            this.inẤnDanhSáchTheoLớpToolStripMenuItem.Name = "inẤnDanhSáchTheoLớpToolStripMenuItem";
+            this.inẤnDanhSáchTheoLớpToolStripMenuItem.Size = new System.Drawing.Size(382, 32);
+            this.inẤnDanhSáchTheoLớpToolStripMenuItem.Text = "In ấn danh sách theo lớp";
+            this.inẤnDanhSáchTheoLớpToolStripMenuItem.Click += new System.EventHandler(this.inẤnDanhSáchTheoLớpToolStripMenuItem_Click);
             // 
             // btnDx
             // 
@@ -766,6 +767,13 @@
             this.btnThoat.TabIndex = 14;
             this.btnThoat.TabStop = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
+            // inẤnDanhSáchTheoGiớiTínhToolStripMenuItem
+            // 
+            this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem.Name = "inẤnDanhSáchTheoGiớiTínhToolStripMenuItem";
+            this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem.Size = new System.Drawing.Size(382, 32);
+            this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem.Text = "In ấn danh sách theo giới tính";
+            this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem.Click += new System.EventHandler(this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem_Click);
             // 
             // frmQL
             // 
@@ -856,7 +864,6 @@
         private System.Windows.Forms.Button btnDx;
         private System.Windows.Forms.Button btnClass;
         private System.Windows.Forms.ToolStripMenuItem sortByClassToolStripMenuItem;
-        private System.Windows.Forms.Button btnINAN;
         private System.Windows.Forms.ToolStripMenuItem iToolStripMenuItem;
         private System.Windows.Forms.PictureBox btnMini;
         private System.Windows.Forms.PictureBox btnThoat;
@@ -865,6 +872,9 @@
         private System.Windows.Forms.ComboBox Phai;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ToolStripMenuItem khôngHợpLệToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inẤnDanhSáchSinhViênToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inẤnDanhSáchTheoLớpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inẤnDanhSáchTheoGiớiTínhToolStripMenuItem;
     }
 }
 

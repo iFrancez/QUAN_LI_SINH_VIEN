@@ -90,6 +90,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DanhSachTK.cs" />
+    <Compile Include="Dssinhvientheolop.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Dssinhvientheolop.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dssinhvien_lop.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dssinhvien_lop.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frmAbout.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +117,18 @@
     </Compile>
     <Compile Include="frmClass.Designer.cs">
       <DependentUpon>frmClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmdssvtheolop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdssvtheolop.Designer.cs">
+      <DependentUpon>frmdssvtheolop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmgioitinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmgioitinh.Designer.cs">
+      <DependentUpon>frmgioitinh.cs</DependentUpon>
     </Compile>
     <Compile Include="frmInAn.cs">
       <SubType>Form</SubType>
@@ -195,6 +217,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLSVDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QLSVDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLSVDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Taikhoan.cs" />
     <EmbeddedResource Include="frmAbout.resx">
@@ -205,6 +232,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmClass.resx">
       <DependentUpon>frmClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdssvtheolop.resx">
+      <DependentUpon>frmdssvtheolop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmgioitinh.resx">
+      <DependentUpon>frmgioitinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInAn.resx">
       <DependentUpon>frmInAn.cs</DependentUpon>
@@ -253,6 +286,30 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="rpInAn.rdlc" />
+    <EmbeddedResource Include="rptdssinhvientheogioitinh.rdlc" />
+    <EmbeddedResource Include="rptdssvtheolop.rdlc" />
+    <None Include="Dssinhvientheolop.xsc">
+      <DependentUpon>Dssinhvientheolop.xsd</DependentUpon>
+    </None>
+    <None Include="Dssinhvientheolop.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Dssinhvientheolop.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dssinhvientheolop.xss">
+      <DependentUpon>Dssinhvientheolop.xsd</DependentUpon>
+    </None>
+    <None Include="dssinhvien_lop.xsc">
+      <DependentUpon>dssinhvien_lop.xsd</DependentUpon>
+    </None>
+    <None Include="dssinhvien_lop.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dssinhvien_lop.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dssinhvien_lop.xss">
+      <DependentUpon>dssinhvien_lop.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -290,6 +347,17 @@
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="QLSVDataSet1.xsc">
+      <DependentUpon>QLSVDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLSVDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLSVDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLSVDataSet1.xss">
+      <DependentUpon>QLSVDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Resources\shut-down-1540630.png" />
     <None Include="Resources\minimize.png" />
     <None Include="Resources\close.png" />
