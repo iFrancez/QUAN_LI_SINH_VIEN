@@ -356,5 +356,11 @@ namespace QLSV_TEST2
             frmgioitinh f = new frmgioitinh();
             f.ShowDialog();
         }
+
+        private void biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCot f = new frmCot();
+            f.ShowDialog();
+        }
     }
 }

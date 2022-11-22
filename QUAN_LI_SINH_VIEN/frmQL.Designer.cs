@@ -84,10 +84,12 @@
             this.iToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inẤnDanhSáchSinhViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inẤnDanhSáchTheoLớpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnDx = new System.Windows.Forms.Button();
             this.btnMini = new System.Windows.Forms.PictureBox();
             this.btnThoat = new System.Windows.Forms.PictureBox();
-            this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bIểuĐồToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtDanhSach)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -550,7 +552,8 @@
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
             this.cácThaoTácKhácToolStripMenuItem,
-            this.iToolStripMenuItem});
+            this.iToolStripMenuItem,
+            this.bIểuĐồToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1135, 36);
@@ -730,6 +733,13 @@
             this.inẤnDanhSáchTheoLớpToolStripMenuItem.Text = "In ấn danh sách theo lớp";
             this.inẤnDanhSáchTheoLớpToolStripMenuItem.Click += new System.EventHandler(this.inẤnDanhSáchTheoLớpToolStripMenuItem_Click);
             // 
+            // inẤnDanhSáchTheoGiớiTínhToolStripMenuItem
+            // 
+            this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem.Name = "inẤnDanhSáchTheoGiớiTínhToolStripMenuItem";
+            this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem.Size = new System.Drawing.Size(382, 32);
+            this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem.Text = "In ấn danh sách theo giới tính";
+            this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem.Click += new System.EventHandler(this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem_Click);
+            // 
             // btnDx
             // 
             this.btnDx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -768,12 +778,20 @@
             this.btnThoat.TabStop = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // inẤnDanhSáchTheoGiớiTínhToolStripMenuItem
+            // bIểuĐồToolStripMenuItem
             // 
-            this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem.Name = "inẤnDanhSáchTheoGiớiTínhToolStripMenuItem";
-            this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem.Size = new System.Drawing.Size(382, 32);
-            this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem.Text = "In ấn danh sách theo giới tính";
-            this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem.Click += new System.EventHandler(this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem_Click);
+            this.bIểuĐồToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem});
+            this.bIểuĐồToolStripMenuItem.Name = "bIểuĐồToolStripMenuItem";
+            this.bIểuĐồToolStripMenuItem.Size = new System.Drawing.Size(99, 32);
+            this.bIểuĐồToolStripMenuItem.Text = "BIểu đồ";
+            // 
+            // biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem
+            // 
+            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem.Name = "biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem";
+            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem.Size = new System.Drawing.Size(392, 32);
+            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem.Text = "Biểu đồ cột theo sỉ số từng lớp";
+            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem.Click += new System.EventHandler(this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem_Click);
             // 
             // frmQL
             // 
@@ -875,6 +893,8 @@
         private System.Windows.Forms.ToolStripMenuItem inẤnDanhSáchSinhViênToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inẤnDanhSáchTheoLớpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inẤnDanhSáchTheoGiớiTínhToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bIểuĐồToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem;
     }
 }
 
