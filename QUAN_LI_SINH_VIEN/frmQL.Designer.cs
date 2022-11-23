@@ -85,11 +85,11 @@
             this.inẤnDanhSáchSinhViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inẤnDanhSáchTheoLớpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bIểuĐồToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnDx = new System.Windows.Forms.Button();
             this.btnMini = new System.Windows.Forms.PictureBox();
             this.btnThoat = new System.Windows.Forms.PictureBox();
-            this.bIểuĐồToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtDanhSach)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -721,6 +721,7 @@
             // 
             // inẤnDanhSáchSinhViênToolStripMenuItem
             // 
+            this.inẤnDanhSáchSinhViênToolStripMenuItem.Image = global::QLSV_TEST2.Properties.Resources.People;
             this.inẤnDanhSáchSinhViênToolStripMenuItem.Name = "inẤnDanhSáchSinhViênToolStripMenuItem";
             this.inẤnDanhSáchSinhViênToolStripMenuItem.Size = new System.Drawing.Size(382, 32);
             this.inẤnDanhSáchSinhViênToolStripMenuItem.Text = "In ấn danh sách sinh viên";
@@ -728,6 +729,7 @@
             // 
             // inẤnDanhSáchTheoLớpToolStripMenuItem
             // 
+            this.inẤnDanhSáchTheoLớpToolStripMenuItem.Image = global::QLSV_TEST2.Properties.Resources.People2;
             this.inẤnDanhSáchTheoLớpToolStripMenuItem.Name = "inẤnDanhSáchTheoLớpToolStripMenuItem";
             this.inẤnDanhSáchTheoLớpToolStripMenuItem.Size = new System.Drawing.Size(382, 32);
             this.inẤnDanhSáchTheoLớpToolStripMenuItem.Text = "In ấn danh sách theo lớp";
@@ -735,10 +737,28 @@
             // 
             // inẤnDanhSáchTheoGiớiTínhToolStripMenuItem
             // 
+            this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem.Image = global::QLSV_TEST2.Properties.Resources.People77;
             this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem.Name = "inẤnDanhSáchTheoGiớiTínhToolStripMenuItem";
             this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem.Size = new System.Drawing.Size(382, 32);
             this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem.Text = "In ấn danh sách theo giới tính";
             this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem.Click += new System.EventHandler(this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem_Click);
+            // 
+            // bIểuĐồToolStripMenuItem
+            // 
+            this.bIểuĐồToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem});
+            this.bIểuĐồToolStripMenuItem.Image = global::QLSV_TEST2.Properties.Resources.Statistics_icon2;
+            this.bIểuĐồToolStripMenuItem.Name = "bIểuĐồToolStripMenuItem";
+            this.bIểuĐồToolStripMenuItem.Size = new System.Drawing.Size(119, 32);
+            this.bIểuĐồToolStripMenuItem.Text = "Biểu đồ";
+            // 
+            // biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem
+            // 
+            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem.Image = global::QLSV_TEST2.Properties.Resources.statistics_icon1;
+            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem.Name = "biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem";
+            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem.Size = new System.Drawing.Size(392, 32);
+            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem.Text = "Biểu đồ cột theo sỉ số từng lớp";
+            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem.Click += new System.EventHandler(this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem_Click);
             // 
             // btnDx
             // 
@@ -778,21 +798,6 @@
             this.btnThoat.TabStop = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // bIểuĐồToolStripMenuItem
-            // 
-            this.bIểuĐồToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem});
-            this.bIểuĐồToolStripMenuItem.Name = "bIểuĐồToolStripMenuItem";
-            this.bIểuĐồToolStripMenuItem.Size = new System.Drawing.Size(99, 32);
-            this.bIểuĐồToolStripMenuItem.Text = "Biểu đồ";
-            // 
-            // biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem
-            // 
-            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem.Name = "biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem";
-            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem.Size = new System.Drawing.Size(392, 32);
-            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem.Text = "Biểu đồ cột theo sỉ số từng lớp";
-            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem.Click += new System.EventHandler(this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem_Click);
-            // 
             // frmQL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -814,7 +819,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmQL";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Quản lý sinh viên";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DtDanhSach)).EndInit();

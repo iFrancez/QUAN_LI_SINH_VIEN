@@ -253,6 +253,36 @@ namespace QLSV_TEST2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap People {
+            get {
+                object obj = ResourceManager.GetObject("People", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap People2 {
+            get {
+                object obj = ResourceManager.GetObject("People2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap People77 {
+            get {
+                object obj = ResourceManager.GetObject("People77", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap PRINT {
             get {
                 object obj = ResourceManager.GetObject("PRINT", resourceCulture);
@@ -296,6 +326,26 @@ namespace QLSV_TEST2.Properties {
         internal static System.Drawing.Bitmap shut_down_1540630 {
             get {
                 object obj = ResourceManager.GetObject("shut-down-1540630", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap statistics_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("statistics_icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Statistics_icon2 {
+            get {
+                object obj = ResourceManager.GetObject("Statistics-icon2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

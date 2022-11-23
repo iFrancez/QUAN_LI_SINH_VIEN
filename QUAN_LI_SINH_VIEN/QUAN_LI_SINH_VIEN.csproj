@@ -403,6 +403,11 @@
     <None Include="Resources\logoSuphamtphcm.png" />
     <None Include="Resources\user.jpg" />
     <None Include="Resources\user1.jpg" />
+    <None Include="Resources\People.ico" />
+    <None Include="Resources\People2.ico" />
+    <None Include="Resources\People77.ico" />
+    <None Include="Resources\statistics_icon1.png" />
+    <None Include="Resources\Statistics-icon2.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
