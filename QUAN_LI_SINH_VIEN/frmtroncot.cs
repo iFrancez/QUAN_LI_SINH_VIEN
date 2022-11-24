@@ -31,6 +31,7 @@ namespace QLSV_TEST2
             //chèn tiêu đề
             chart1.ChartAreas["ChartArea1"].AxisX.Title = "Mã lớp";
             chart1.ChartAreas["ChartArea1"].AxisY.Title = "Sỉ số";
+            chart1.Series["SiSo"]["DrawingStyle"] = "Cylinder"; //ve cot theo font cylinder
             chart1.DataSource = databaseBD.SOLUONG;
             chart1.DataBind();
         }
