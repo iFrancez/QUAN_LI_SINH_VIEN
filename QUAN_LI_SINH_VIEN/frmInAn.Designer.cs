@@ -139,7 +139,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        //private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer2;
         private System.Windows.Forms.BindingSource HocSinhBindingSource;
         private System.Windows.Forms.Label lblNgay;

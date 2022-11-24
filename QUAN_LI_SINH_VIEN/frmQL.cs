@@ -357,9 +357,21 @@ namespace QLSV_TEST2
             f.ShowDialog();
         }
 
-        private void biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem_Click(object sender, EventArgs e)
+        private void soLuongToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmCot f = new frmCot();
+            QLSVDataContext db = new QLSVDataContext();
+            DtDanhSach.DataSource = from u in db.HocSinhs
+                                    join y in db.Lops on u.MaLop equals y.MaLop
+                                    group u by u.MaLop into d
+                                    select new
+                                    {
+                                        SiSo = d.Count()
+                                    };
+        }
+
+        private void biểuĐồCộtVàTrònTheoSỉSốCủaHọcSinhTừngLớpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmtroncot f = new frmtroncot();
             f.ShowDialog();
         }
     }

@@ -86,7 +86,8 @@
             this.inẤnDanhSáchTheoLớpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bIểuĐồToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.biểuĐồCộtVàTrònTheoSỉSốCủaHọcSinhTừngLớpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.soLuongToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnDx = new System.Windows.Forms.Button();
             this.btnMini = new System.Windows.Forms.PictureBox();
             this.btnThoat = new System.Windows.Forms.PictureBox();
@@ -553,10 +554,11 @@
             this.editToolStripMenuItem,
             this.cácThaoTácKhácToolStripMenuItem,
             this.iToolStripMenuItem,
+            this.soLuongToolStripMenuItem,
             this.bIểuĐồToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1135, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1186, 36);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -746,19 +748,27 @@
             // bIểuĐồToolStripMenuItem
             // 
             this.bIểuĐồToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem});
+            this.biểuĐồCộtVàTrònTheoSỉSốCủaHọcSinhTừngLớpToolStripMenuItem});
             this.bIểuĐồToolStripMenuItem.Image = global::QLSV_TEST2.Properties.Resources.Statistics_icon2;
             this.bIểuĐồToolStripMenuItem.Name = "bIểuĐồToolStripMenuItem";
             this.bIểuĐồToolStripMenuItem.Size = new System.Drawing.Size(119, 32);
             this.bIểuĐồToolStripMenuItem.Text = "Biểu đồ";
             // 
-            // biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem
+            // biểuĐồCộtVàTrònTheoSỉSốCủaHọcSinhTừngLớpToolStripMenuItem
             // 
-            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem.Image = global::QLSV_TEST2.Properties.Resources.statistics_icon1;
-            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem.Name = "biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem";
-            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem.Size = new System.Drawing.Size(392, 32);
-            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem.Text = "Biểu đồ cột theo sỉ số từng lớp";
-            this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem.Click += new System.EventHandler(this.biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem_Click);
+            this.biểuĐồCộtVàTrònTheoSỉSốCủaHọcSinhTừngLớpToolStripMenuItem.Image = global::QLSV_TEST2.Properties.Resources.statistics_icon1;
+            this.biểuĐồCộtVàTrònTheoSỉSốCủaHọcSinhTừngLớpToolStripMenuItem.Name = "biểuĐồCộtVàTrònTheoSỉSốCủaHọcSinhTừngLớpToolStripMenuItem";
+            this.biểuĐồCộtVàTrònTheoSỉSốCủaHọcSinhTừngLớpToolStripMenuItem.Size = new System.Drawing.Size(455, 32);
+            this.biểuĐồCộtVàTrònTheoSỉSốCủaHọcSinhTừngLớpToolStripMenuItem.Text = "Biểu đồ cột và tròn số lượng học sinh";
+            this.biểuĐồCộtVàTrònTheoSỉSốCủaHọcSinhTừngLớpToolStripMenuItem.Click += new System.EventHandler(this.biểuĐồCộtVàTrònTheoSỉSốCủaHọcSinhTừngLớpToolStripMenuItem_Click);
+            // 
+            // soLuongToolStripMenuItem
+            // 
+            this.soLuongToolStripMenuItem.Image = global::QLSV_TEST2.Properties.Resources.user;
+            this.soLuongToolStripMenuItem.Name = "soLuongToolStripMenuItem";
+            this.soLuongToolStripMenuItem.Size = new System.Drawing.Size(222, 32);
+            this.soLuongToolStripMenuItem.Text = "Số lượng sinh viên";
+            this.soLuongToolStripMenuItem.Click += new System.EventHandler(this.soLuongToolStripMenuItem_Click);
             // 
             // btnDx
             // 
@@ -778,7 +788,7 @@
             // btnMini
             // 
             this.btnMini.Image = global::QLSV_TEST2.Properties.Resources.minimize;
-            this.btnMini.Location = new System.Drawing.Point(1049, 0);
+            this.btnMini.Location = new System.Drawing.Point(1112, 0);
             this.btnMini.Name = "btnMini";
             this.btnMini.Size = new System.Drawing.Size(34, 30);
             this.btnMini.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -790,7 +800,7 @@
             // 
             this.btnThoat.BackColor = System.Drawing.Color.Transparent;
             this.btnThoat.Image = global::QLSV_TEST2.Properties.Resources.close;
-            this.btnThoat.Location = new System.Drawing.Point(1089, 0);
+            this.btnThoat.Location = new System.Drawing.Point(1152, 0);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(34, 30);
             this.btnThoat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -804,7 +814,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1135, 690);
+            this.ClientSize = new System.Drawing.Size(1186, 690);
             this.ControlBox = false;
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnMini);
@@ -899,7 +909,9 @@
         private System.Windows.Forms.ToolStripMenuItem inẤnDanhSáchTheoLớpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inẤnDanhSáchTheoGiớiTínhToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bIểuĐồToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem biểuĐồCộtTheoSỉSốTừngLớpToolStripMenuItem;
+        //private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem soLuongToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem biểuĐồCộtVàTrònTheoSỉSốCủaHọcSinhTừngLớpToolStripMenuItem;
     }
 }
 

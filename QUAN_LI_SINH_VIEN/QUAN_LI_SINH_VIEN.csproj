@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -98,6 +113,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DanhSachTK.cs" />
+    <Compile Include="DatabaseBD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseBD.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Dssinhvientheolop.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -204,11 +224,11 @@
     <Compile Include="frmThem.Designer.cs">
       <DependentUpon>frmThem.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCot.cs">
+    <Compile Include="frmtroncot.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCot.Designer.cs">
-      <DependentUpon>frmCot.cs</DependentUpon>
+    <Compile Include="frmtroncot.Designer.cs">
+      <DependentUpon>frmtroncot.cs</DependentUpon>
     </Compile>
     <Compile Include="frmXoa.cs">
       <SubType>Form</SubType>
@@ -286,8 +306,8 @@
     <EmbeddedResource Include="frmThem.resx">
       <DependentUpon>frmThem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCot.resx">
-      <DependentUpon>frmCot.cs</DependentUpon>
+    <EmbeddedResource Include="frmtroncot.resx">
+      <DependentUpon>frmtroncot.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmXoa.resx">
       <DependentUpon>frmXoa.cs</DependentUpon>
@@ -305,6 +325,17 @@
     <EmbeddedResource Include="rpInAn.rdlc" />
     <EmbeddedResource Include="rptdssinhvientheogioitinh.rdlc" />
     <EmbeddedResource Include="rptdssvtheolop.rdlc" />
+    <None Include="DatabaseBD.xsc">
+      <DependentUpon>DatabaseBD.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseBD.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseBD.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseBD.xss">
+      <DependentUpon>DatabaseBD.xsd</DependentUpon>
+    </None>
     <None Include="Dssinhvientheolop.xsc">
       <DependentUpon>Dssinhvientheolop.xsd</DependentUpon>
     </None>
@@ -408,6 +439,13 @@
     <None Include="Resources\People77.ico" />
     <None Include="Resources\statistics_icon1.png" />
     <None Include="Resources\Statistics-icon2.png" />
+    <Content Include="DatabaseBD.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DatabaseBD_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DatabaseBD.mdf</DependentUpon>
+    </Content>
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -421,6 +459,18 @@
     <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
