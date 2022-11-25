@@ -63,6 +63,16 @@ namespace QLSV_TEST2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _470_4703547_icon_user_icon_hd_png_download {
+            get {
+                object obj = ResourceManager.GetObject("470-4703547_icon-user-icon-hd-png-download", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add {
             get {
                 object obj = ResourceManager.GetObject("add", resourceCulture);
@@ -86,6 +96,16 @@ namespace QLSV_TEST2.Properties {
         internal static System.Drawing.Bitmap checkin {
             get {
                 object obj = ResourceManager.GetObject("checkin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap clipart3235554 {
+            get {
+                object obj = ResourceManager.GetObject("clipart3235554", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +186,16 @@ namespace QLSV_TEST2.Properties {
         internal static System.Drawing.Bitmap IconError {
             get {
                 object obj = ResourceManager.GetObject("IconError", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_padlock_clip_art_padlock_pictures_5ab1dd19b6ee55_2586617615216059137493 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-padlock-clip-art-padlock-pictures-5ab1dd19b6ee55.2586617615216059137493", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -376,6 +406,26 @@ namespace QLSV_TEST2.Properties {
         internal static System.Drawing.Bitmap user {
             get {
                 object obj = ResourceManager.GetObject("user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_286 {
+            get {
+                object obj = ResourceManager.GetObject("user-286", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_account_management_logo_user_icon_11562867145a56rus2zwu {
+            get {
+                object obj = ResourceManager.GetObject("user-account-management-logo-user-icon-11562867145a56rus2zwu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
