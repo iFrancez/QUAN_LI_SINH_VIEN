@@ -39,8 +39,17 @@ namespace QLSV_TEST2
         //đăng nhập 
         private void btnDN_Click(object sender, EventArgs e)
         {
+            if(txtTK.Text == "" ){
+                MessageBox.Show("Mời nhập tên đăng nhập");
+                txtTK.Focus();
+            }
+            else if (txtMK.Text == "")
+            {
+                MessageBox.Show("Mời nhập mật khẩu");
+                txtMK.Focus();
+            }
             //neu kiem tra == true
-            if (kiemtraDangNhap(txtTK.Text,txtMK.Text))
+            else if (kiemtraDangNhap(txtTK.Text,txtMK.Text))
             {
                 MessageBox.Show("Đăng nhập thành công", "Thông báo");
                 frmQL f = new frmQL();
