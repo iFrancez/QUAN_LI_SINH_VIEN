@@ -70,6 +70,7 @@ namespace QLSV_TEST2
             btnExit.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnExit.Width, btnExit.Height, 30, 30));
             btnDx.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnDx.Width, btnDx.Height, 30, 30));
             btnKHL.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnKHL.Width, btnKHL.Height, 30, 30));
+            btnXL.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnXL.Width, btnKHL.Height, 30, 30));
             //
             connection = new SqlConnection(str);
             connection.Open();
@@ -308,6 +309,104 @@ namespace QLSV_TEST2
             else MessageBox.Show("Tất cả sinh viên đều có điểm DTB hợp lệ", "Thông báo");
             frmKhongHopLe f = new frmKhongHopLe();
             f.ShowDialog();
+        }
+        private void btnXL_Click(object sender, EventArgs e)
+        {
+            if (cbXepLoai.Text == "Giỏi")
+            {
+                QLSVDataContext db = new QLSVDataContext();
+                DtDanhSach.DataSource = from u in db.HocSinhs
+                                        where u.DTB <= 10 && u.DTB >= 8.5
+                                        orderby u.DTB ascending
+                                        select new
+                                        {
+                                            MaHS = u.MaHS,
+                                            TenHS = u.TenHS,
+                                            NgaySinh = u.NgaySinh,
+                                            DiaChi = u.DiaChi,
+                                            DTB = u.DTB,
+                                            MaLop = u.MaLop,
+                                            Phai = u.Phái
+                                        };
+                if (DtDanhSach.RowCount > 0) MessageBox.Show("Sinh viên xếp loại giỏi", "Thông báo");
+                else MessageBox.Show("Không có sinh viên nào xếp loại giỏi", "Thông báo");
+            }
+            if (cbXepLoai.Text == "Khá")
+            {
+                QLSVDataContext db = new QLSVDataContext();
+                DtDanhSach.DataSource = from u in db.HocSinhs
+                                        where u.DTB >= 7 && u.DTB <= 8.4
+                                        orderby u.DTB ascending
+                                        select new
+                                        {
+                                            MaHS = u.MaHS,
+                                            TenHS = u.TenHS,
+                                            NgaySinh = u.NgaySinh,
+                                            DiaChi = u.DiaChi,
+                                            DTB = u.DTB,
+                                            MaLop = u.MaLop,
+                                            Phai = u.Phái
+                                        };
+                if (DtDanhSach.RowCount > 0) MessageBox.Show("Sinh viên xếp loại khá", "Thông báo");
+                else MessageBox.Show("Không có sinh viên nào xếp loại khá", "Thông báo");
+            }
+            if (cbXepLoai.Text == "Trung bình")
+            {
+                QLSVDataContext db = new QLSVDataContext();
+                DtDanhSach.DataSource = from u in db.HocSinhs
+                                        where u.DTB >= 5.5 && u.DTB <= 6.9
+                                        orderby u.DTB ascending
+                                        select new
+                                        {
+                                            MaHS = u.MaHS,
+                                            TenHS = u.TenHS,
+                                            NgaySinh = u.NgaySinh,
+                                            DiaChi = u.DiaChi,
+                                            DTB = u.DTB,
+                                            MaLop = u.MaLop,
+                                            Phai = u.Phái
+                                        };
+                if (DtDanhSach.RowCount > 0) MessageBox.Show("Sinh viên xếp loại trung bình", "Thông báo");
+                else MessageBox.Show("Không có sinh viên nào xếp loại trung bình", "Thông báo");
+            }
+            if (cbXepLoai.Text == "Trung bình yếu")
+            {
+                QLSVDataContext db = new QLSVDataContext();
+                DtDanhSach.DataSource = from u in db.HocSinhs
+                                        where u.DTB >= 4 && u.DTB <= 5.4
+                                        orderby u.DTB ascending
+                                        select new
+                                        {
+                                            MaHS = u.MaHS,
+                                            TenHS = u.TenHS,
+                                            NgaySinh = u.NgaySinh,
+                                            DiaChi = u.DiaChi,
+                                            DTB = u.DTB,
+                                            MaLop = u.MaLop,
+                                            Phai = u.Phái
+                                        };
+                if (DtDanhSach.RowCount > 0) MessageBox.Show("Sinh viên xếp loại trung bình yếu", "Thông báo");
+                else MessageBox.Show("Không có sinh viên nào xếp loại trung bình yếu", "Thông báo");
+            }
+            if (cbXepLoai.Text == "Kém")
+            {
+                QLSVDataContext db = new QLSVDataContext();
+                DtDanhSach.DataSource = from u in db.HocSinhs
+                                        where u.DTB >= 0 && u.DTB <= 3.9
+                                        orderby u.DTB ascending
+                                        select new
+                                        {
+                                            MaHS = u.MaHS,
+                                            TenHS = u.TenHS,
+                                            NgaySinh = u.NgaySinh,
+                                            DiaChi = u.DiaChi,
+                                            DTB = u.DTB,
+                                            MaLop = u.MaLop,
+                                            Phai = u.Phái
+                                        };
+                if (DtDanhSach.RowCount > 0) MessageBox.Show("Sinh viên xếp loại kém", "Thông báo");
+                else MessageBox.Show("Không có sinh viên xếp loại kém", "Thông báo");
+            }
         }
         private void btnExit_Click(object sender, EventArgs e)
         {

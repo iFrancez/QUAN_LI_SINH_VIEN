@@ -85,12 +85,14 @@
             this.inẤnDanhSáchSinhViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inẤnDanhSáchTheoLớpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.soLuongToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bIểuĐồToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.biểuĐồCộtVàTrònTheoSỉSốCủaHọcSinhTừngLớpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.soLuongToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnDx = new System.Windows.Forms.Button();
             this.btnMini = new System.Windows.Forms.PictureBox();
             this.btnThoat = new System.Windows.Forms.PictureBox();
+            this.btnXL = new System.Windows.Forms.Button();
+            this.cbXepLoai = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtDanhSach)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -385,7 +387,7 @@
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnExit.Location = new System.Drawing.Point(945, 615);
+            this.btnExit.Location = new System.Drawing.Point(1045, 620);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(114, 52);
             this.btnExit.TabIndex = 5;
@@ -488,13 +490,15 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox4.Controls.Add(this.cbXepLoai);
+            this.groupBox4.Controls.Add(this.btnXL);
             this.groupBox4.Controls.Add(this.btnKHL);
             this.groupBox4.Controls.Add(this.btnfalse);
             this.groupBox4.Controls.Add(this.btnpass);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupBox4.Location = new System.Drawing.Point(922, 364);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(201, 214);
+            this.groupBox4.Size = new System.Drawing.Size(237, 245);
             this.groupBox4.TabIndex = 10;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Kết quả";
@@ -506,7 +510,7 @@
             this.btnKHL.FlatAppearance.BorderSize = 0;
             this.btnKHL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKHL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnKHL.Location = new System.Drawing.Point(23, 137);
+            this.btnKHL.Location = new System.Drawing.Point(46, 127);
             this.btnKHL.Name = "btnKHL";
             this.btnKHL.Size = new System.Drawing.Size(154, 32);
             this.btnKHL.TabIndex = 10;
@@ -521,7 +525,7 @@
             this.btnfalse.FlatAppearance.BorderSize = 0;
             this.btnfalse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnfalse.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnfalse.Location = new System.Drawing.Point(23, 96);
+            this.btnfalse.Location = new System.Drawing.Point(46, 89);
             this.btnfalse.Name = "btnfalse";
             this.btnfalse.Size = new System.Drawing.Size(154, 35);
             this.btnfalse.TabIndex = 0;
@@ -536,7 +540,7 @@
             this.btnpass.FlatAppearance.BorderSize = 0;
             this.btnpass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnpass.Location = new System.Drawing.Point(23, 55);
+            this.btnpass.Location = new System.Drawing.Point(46, 51);
             this.btnpass.Name = "btnpass";
             this.btnpass.Size = new System.Drawing.Size(154, 35);
             this.btnpass.TabIndex = 0;
@@ -745,6 +749,14 @@
             this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem.Text = "In ấn danh sách theo giới tính";
             this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem.Click += new System.EventHandler(this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem_Click);
             // 
+            // soLuongToolStripMenuItem
+            // 
+            this.soLuongToolStripMenuItem.Image = global::QLSV_TEST2.Properties.Resources.user;
+            this.soLuongToolStripMenuItem.Name = "soLuongToolStripMenuItem";
+            this.soLuongToolStripMenuItem.Size = new System.Drawing.Size(222, 32);
+            this.soLuongToolStripMenuItem.Text = "Số lượng sinh viên";
+            this.soLuongToolStripMenuItem.Click += new System.EventHandler(this.soLuongToolStripMenuItem_Click);
+            // 
             // bIểuĐồToolStripMenuItem
             // 
             this.bIểuĐồToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -762,14 +774,6 @@
             this.biểuĐồCộtVàTrònTheoSỉSốCủaHọcSinhTừngLớpToolStripMenuItem.Text = "Biểu đồ cột và tròn số lượng học sinh";
             this.biểuĐồCộtVàTrònTheoSỉSốCủaHọcSinhTừngLớpToolStripMenuItem.Click += new System.EventHandler(this.biểuĐồCộtVàTrònTheoSỉSốCủaHọcSinhTừngLớpToolStripMenuItem_Click);
             // 
-            // soLuongToolStripMenuItem
-            // 
-            this.soLuongToolStripMenuItem.Image = global::QLSV_TEST2.Properties.Resources.user;
-            this.soLuongToolStripMenuItem.Name = "soLuongToolStripMenuItem";
-            this.soLuongToolStripMenuItem.Size = new System.Drawing.Size(222, 32);
-            this.soLuongToolStripMenuItem.Text = "Số lượng sinh viên";
-            this.soLuongToolStripMenuItem.Click += new System.EventHandler(this.soLuongToolStripMenuItem_Click);
-            // 
             // btnDx
             // 
             this.btnDx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -777,7 +781,7 @@
             this.btnDx.FlatAppearance.BorderSize = 0;
             this.btnDx.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnDx.Location = new System.Drawing.Point(784, 615);
+            this.btnDx.Location = new System.Drawing.Point(884, 620);
             this.btnDx.Name = "btnDx";
             this.btnDx.Size = new System.Drawing.Size(127, 52);
             this.btnDx.TabIndex = 13;
@@ -807,6 +811,35 @@
             this.btnThoat.TabIndex = 14;
             this.btnThoat.TabStop = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
+            // btnXL
+            // 
+            this.btnXL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnXL.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnXL.FlatAppearance.BorderSize = 0;
+            this.btnXL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnXL.Location = new System.Drawing.Point(46, 162);
+            this.btnXL.Name = "btnXL";
+            this.btnXL.Size = new System.Drawing.Size(154, 32);
+            this.btnXL.TabIndex = 13;
+            this.btnXL.Text = "Xếp loại";
+            this.btnXL.UseVisualStyleBackColor = false;
+            this.btnXL.Click += new System.EventHandler(this.btnXL_Click);
+            // 
+            // cbXepLoai
+            // 
+            this.cbXepLoai.FormattingEnabled = true;
+            this.cbXepLoai.Items.AddRange(new object[] {
+            "Giỏi",
+            "Khá",
+            "Trung bình",
+            "Trung bình yếu",
+            "Kém"});
+            this.cbXepLoai.Location = new System.Drawing.Point(32, 200);
+            this.cbXepLoai.Name = "cbXepLoai";
+            this.cbXepLoai.Size = new System.Drawing.Size(178, 33);
+            this.cbXepLoai.TabIndex = 14;
             // 
             // frmQL
             // 
@@ -912,6 +945,8 @@
         //private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem soLuongToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem biểuĐồCộtVàTrònTheoSỉSốCủaHọcSinhTừngLớpToolStripMenuItem;
+        private System.Windows.Forms.ComboBox cbXepLoai;
+        private System.Windows.Forms.Button btnXL;
     }
 }
 
