@@ -160,10 +160,25 @@ namespace QLSV_TEST2
         {
             if (checkData())
             {
-                command.Connection.CreateCommand();
-                command.CommandText = "insert into HocSinh values('" + txtMaHS.Text + "',N'" + txtTen.Text + "','" + dtNgaySinh.Text + "',N'" + txtDC.Text + "','" + txtDTB.Text + "','" + txtMaLop.Text + "',N'" + Phai.Text + "')";
-                //chi ra loi
-                command.ExecuteNonQuery();
+                //kiem tra db
+                QLSVDataContext db = new QLSVDataContext();
+                HocSinh itemHS = db.HocSinhs.Where(item => item.MaHS == txtMaHS.Text).SingleOrDefault();
+                if (itemHS != null)
+                {   //đã có  => Trùng mã lớp (đã tồn tại)
+                    MessageBox.Show("Mã học sinh này đã tồn tại");
+                    return;
+                }
+                itemHS = new HocSinh();    //chưa có -> tạo mới
+                itemHS.MaHS = txtMaHS.Text;
+                itemHS.TenHS = txtTen.Text;
+                itemHS.NgaySinh = DateTime.Parse(dtNgaySinh.Text);
+                itemHS.DiaChi = txtDC.Text;
+                itemHS.DTB = short.Parse(txtDTB.Text);
+                itemHS.MaLop = txtMaLop.Text;
+                itemHS.Phái = Phai.Text;
+                //thao tac db
+                db.HocSinhs.InsertOnSubmit(itemHS);
+                db.SubmitChanges();
                 loaddata();
                 MessageBox.Show("Thêm thành công", "Thêm");
                 frmThem f = new frmThem();
@@ -175,7 +190,7 @@ namespace QLSV_TEST2
         {
             command.Connection.CreateCommand();
             command.CommandText = "delete from HocSinh where MaHS='" + txtMaHS.Text + "'";
-            //chi ra loi
+            //thi hành truy vấn - không cần trả về dữ liệu gì
             command.ExecuteNonQuery();
             loaddata();
             MessageBox.Show("Xoá thành công", "Xoá");
@@ -188,7 +203,7 @@ namespace QLSV_TEST2
             command.Connection.CreateCommand();
             //ko sua mahs vi do la primary key
             command.CommandText = "update HocSinh set TenHS= N'" + txtTen.Text + "', NgaySinh= '" + dtNgaySinh.Text + "',DiaChi= N'" + txtDC.Text + "',DTB= '" + txtDTB.Text + "',MaLop= '" + txtMaLop.Text + "',Phái= N'" + Phai.Text + "'where MaHS = '" + txtMaHS.Text + "'";
-            command.ExecuteNonQuery(); // kiem tra lỗi nếu sai thì trỏ đến
+            command.ExecuteNonQuery(); // thi hành truy vấn - không cần trả về dữ liệu gì
             loaddata();
             MessageBox.Show("Sửa thành công", "Sửa");
             frmSua f = new frmSua();
