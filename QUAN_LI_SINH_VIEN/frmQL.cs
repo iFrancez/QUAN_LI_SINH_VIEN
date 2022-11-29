@@ -219,6 +219,7 @@ namespace QLSV_TEST2
             txtDTB.Text = "";
             txtMaLop.Text = "";
             Phai.Text = "";
+            cbXepLoai.Text = "";
             MessageBox.Show("Khởi tạo thành công", "Khởi tạo");
         }
 
