@@ -30,30 +30,30 @@ namespace QLSV_TEST2
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title7 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title8 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.btnHC = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.mãLớpDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sốLượngDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sOLUONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.databaseBD = new QLSV_TEST2.DatabaseBD();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnHT = new System.Windows.Forms.Button();
-            this.databaseBD = new QLSV_TEST2.DatabaseBD();
-            this.sOLUONGBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sOLUONGTableAdapter = new QLSV_TEST2.DatabaseBDTableAdapters.SOLUONGTableAdapter();
-            this.mãLớpDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sốLượngDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.databaseBD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sOLUONGBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseBD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,27 +83,53 @@ namespace QLSV_TEST2
             this.dataGridView1.Size = new System.Drawing.Size(616, 150);
             this.dataGridView1.TabIndex = 1;
             // 
+            // mãLớpDataGridViewTextBoxColumn
+            // 
+            this.mãLớpDataGridViewTextBoxColumn.DataPropertyName = "Mã lớp";
+            this.mãLớpDataGridViewTextBoxColumn.HeaderText = "Mã lớp";
+            this.mãLớpDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.mãLớpDataGridViewTextBoxColumn.Name = "mãLớpDataGridViewTextBoxColumn";
+            this.mãLớpDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // sốLượngDataGridViewTextBoxColumn
+            // 
+            this.sốLượngDataGridViewTextBoxColumn.DataPropertyName = "Số lượng";
+            this.sốLượngDataGridViewTextBoxColumn.HeaderText = "Số lượng";
+            this.sốLượngDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.sốLượngDataGridViewTextBoxColumn.Name = "sốLượngDataGridViewTextBoxColumn";
+            this.sốLượngDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // sOLUONGBindingSource
+            // 
+            this.sOLUONGBindingSource.DataMember = "SOLUONG";
+            this.sOLUONGBindingSource.DataSource = this.databaseBD;
+            // 
+            // databaseBD
+            // 
+            this.databaseBD.DataSetName = "DatabaseBD";
+            this.databaseBD.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // chart1
             // 
-            chartArea7.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea7);
-            legend7.Name = "Legend1";
-            this.chart1.Legends.Add(legend7);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(40, 232);
             this.chart1.Name = "chart1";
-            series7.ChartArea = "ChartArea1";
-            series7.IsValueShownAsLabel = true;
-            series7.Legend = "Legend1";
-            series7.Name = "SiSo";
-            this.chart1.Series.Add(series7);
+            series1.ChartArea = "ChartArea1";
+            series1.IsValueShownAsLabel = true;
+            series1.Legend = "Legend1";
+            series1.Name = "SiSo";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(495, 391);
             this.chart1.TabIndex = 2;
             this.chart1.Text = "chart1";
-            title7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            title7.ForeColor = System.Drawing.Color.Red;
-            title7.Name = "Title1";
-            title7.Text = "Biểu đồ cột";
-            this.chart1.Titles.Add(title7);
+            title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            title1.ForeColor = System.Drawing.Color.Red;
+            title1.Name = "Title1";
+            title1.Text = "Biểu đồ cột của học sinh các lớp công nghệ thông tin";
+            this.chart1.Titles.Add(title1);
             // 
             // btnLuu
             // 
@@ -127,58 +153,31 @@ namespace QLSV_TEST2
             this.btnHT.UseVisualStyleBackColor = true;
             this.btnHT.Click += new System.EventHandler(this.btnHT_Click);
             // 
-            // databaseBD
-            // 
-            this.databaseBD.DataSetName = "DatabaseBD";
-            this.databaseBD.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sOLUONGBindingSource
-            // 
-            this.sOLUONGBindingSource.DataMember = "SOLUONG";
-            this.sOLUONGBindingSource.DataSource = this.databaseBD;
-            // 
             // sOLUONGTableAdapter
             // 
             this.sOLUONGTableAdapter.ClearBeforeFill = true;
             // 
-            // mãLớpDataGridViewTextBoxColumn
-            // 
-            this.mãLớpDataGridViewTextBoxColumn.DataPropertyName = "Mã lớp";
-            this.mãLớpDataGridViewTextBoxColumn.HeaderText = "Mã lớp";
-            this.mãLớpDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.mãLớpDataGridViewTextBoxColumn.Name = "mãLớpDataGridViewTextBoxColumn";
-            this.mãLớpDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // sốLượngDataGridViewTextBoxColumn
-            // 
-            this.sốLượngDataGridViewTextBoxColumn.DataPropertyName = "Số lượng";
-            this.sốLượngDataGridViewTextBoxColumn.HeaderText = "Số lượng";
-            this.sốLượngDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.sốLượngDataGridViewTextBoxColumn.Name = "sốLượngDataGridViewTextBoxColumn";
-            this.sốLượngDataGridViewTextBoxColumn.Width = 125;
-            // 
             // chart2
             // 
-            chartArea8.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea8);
-            legend8.Name = "Legend1";
-            this.chart2.Legends.Add(legend8);
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart2.Legends.Add(legend2);
             this.chart2.Location = new System.Drawing.Point(655, 232);
             this.chart2.Name = "chart2";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series8.IsValueShownAsLabel = true;
-            series8.Legend = "Legend1";
-            series8.Name = "SiSo";
-            this.chart2.Series.Add(series8);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series2.Legend = "Legend1";
+            series2.Name = "SiSo";
+            this.chart2.Series.Add(series2);
             this.chart2.Size = new System.Drawing.Size(495, 391);
             this.chart2.TabIndex = 2;
             this.chart2.Text = "chart1";
-            title8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            title8.ForeColor = System.Drawing.Color.Red;
-            title8.Name = "Title1";
-            title8.Text = "Biểu đồ tròn";
-            this.chart2.Titles.Add(title8);
+            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            title2.ForeColor = System.Drawing.Color.Red;
+            title2.Name = "Title1";
+            title2.Text = "Biểu đồ tròn của học sinh các lớp công nghệ thông tin";
+            this.chart2.Titles.Add(title2);
             // 
             // label1
             // 
@@ -211,9 +210,9 @@ namespace QLSV_TEST2
             this.Text = "Biểu đồ cột và tròn";
             this.Load += new System.EventHandler(this.frmtroncot_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.databaseBD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sOLUONGBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseBD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

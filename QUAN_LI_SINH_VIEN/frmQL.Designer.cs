@@ -61,6 +61,8 @@
             this.sort = new System.Windows.Forms.GroupBox();
             this.btnClass = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.cbXepLoai = new System.Windows.Forms.ComboBox();
+            this.btnXL = new System.Windows.Forms.Button();
             this.btnKHL = new System.Windows.Forms.Button();
             this.btnfalse = new System.Windows.Forms.Button();
             this.btnpass = new System.Windows.Forms.Button();
@@ -82,7 +84,6 @@
             this.rớtMônToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.khôngHợpLệToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inẤnDanhSáchSinhViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inẤnDanhSáchTheoLớpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inẤnDanhSáchTheoGiớiTínhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.soLuongToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -91,8 +92,7 @@
             this.btnDx = new System.Windows.Forms.Button();
             this.btnMini = new System.Windows.Forms.PictureBox();
             this.btnThoat = new System.Windows.Forms.PictureBox();
-            this.btnXL = new System.Windows.Forms.Button();
-            this.cbXepLoai = new System.Windows.Forms.ComboBox();
+            this.inẤnDanhSáchSinhViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DtDanhSach)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -503,6 +503,35 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Kết quả";
             // 
+            // cbXepLoai
+            // 
+            this.cbXepLoai.FormattingEnabled = true;
+            this.cbXepLoai.Items.AddRange(new object[] {
+            "Giỏi",
+            "Khá",
+            "Trung bình",
+            "Trung bình yếu",
+            "Kém"});
+            this.cbXepLoai.Location = new System.Drawing.Point(32, 200);
+            this.cbXepLoai.Name = "cbXepLoai";
+            this.cbXepLoai.Size = new System.Drawing.Size(178, 33);
+            this.cbXepLoai.TabIndex = 14;
+            // 
+            // btnXL
+            // 
+            this.btnXL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnXL.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnXL.FlatAppearance.BorderSize = 0;
+            this.btnXL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnXL.Location = new System.Drawing.Point(46, 162);
+            this.btnXL.Name = "btnXL";
+            this.btnXL.Size = new System.Drawing.Size(154, 32);
+            this.btnXL.TabIndex = 13;
+            this.btnXL.Text = "Xếp loại";
+            this.btnXL.UseVisualStyleBackColor = false;
+            this.btnXL.Click += new System.EventHandler(this.btnXL_Click);
+            // 
             // btnKHL
             // 
             this.btnKHL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -725,14 +754,6 @@
             this.iToolStripMenuItem.Size = new System.Drawing.Size(93, 32);
             this.iToolStripMenuItem.Text = "In ấn";
             // 
-            // inẤnDanhSáchSinhViênToolStripMenuItem
-            // 
-            this.inẤnDanhSáchSinhViênToolStripMenuItem.Image = global::QLSV_TEST2.Properties.Resources.People;
-            this.inẤnDanhSáchSinhViênToolStripMenuItem.Name = "inẤnDanhSáchSinhViênToolStripMenuItem";
-            this.inẤnDanhSáchSinhViênToolStripMenuItem.Size = new System.Drawing.Size(382, 32);
-            this.inẤnDanhSáchSinhViênToolStripMenuItem.Text = "In ấn danh sách sinh viên";
-            this.inẤnDanhSáchSinhViênToolStripMenuItem.Click += new System.EventHandler(this.inẤnDanhSáchSinhViênToolStripMenuItem_Click);
-            // 
             // inẤnDanhSáchTheoLớpToolStripMenuItem
             // 
             this.inẤnDanhSáchTheoLớpToolStripMenuItem.Image = global::QLSV_TEST2.Properties.Resources.People2;
@@ -812,34 +833,13 @@
             this.btnThoat.TabStop = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // btnXL
+            // inẤnDanhSáchSinhViênToolStripMenuItem
             // 
-            this.btnXL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnXL.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnXL.FlatAppearance.BorderSize = 0;
-            this.btnXL.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnXL.Location = new System.Drawing.Point(46, 162);
-            this.btnXL.Name = "btnXL";
-            this.btnXL.Size = new System.Drawing.Size(154, 32);
-            this.btnXL.TabIndex = 13;
-            this.btnXL.Text = "Xếp loại";
-            this.btnXL.UseVisualStyleBackColor = false;
-            this.btnXL.Click += new System.EventHandler(this.btnXL_Click);
-            // 
-            // cbXepLoai
-            // 
-            this.cbXepLoai.FormattingEnabled = true;
-            this.cbXepLoai.Items.AddRange(new object[] {
-            "Giỏi",
-            "Khá",
-            "Trung bình",
-            "Trung bình yếu",
-            "Kém"});
-            this.cbXepLoai.Location = new System.Drawing.Point(32, 200);
-            this.cbXepLoai.Name = "cbXepLoai";
-            this.cbXepLoai.Size = new System.Drawing.Size(178, 33);
-            this.cbXepLoai.TabIndex = 14;
+            this.inẤnDanhSáchSinhViênToolStripMenuItem.Image = global::QLSV_TEST2.Properties.Resources.People;
+            this.inẤnDanhSáchSinhViênToolStripMenuItem.Name = "inẤnDanhSáchSinhViênToolStripMenuItem";
+            this.inẤnDanhSáchSinhViênToolStripMenuItem.Size = new System.Drawing.Size(382, 32);
+            this.inẤnDanhSáchSinhViênToolStripMenuItem.Text = "In ấn danh sách sinh viên";
+            this.inẤnDanhSáchSinhViênToolStripMenuItem.Click += new System.EventHandler(this.inẤnDanhSáchSinhViênToolStripMenuItem_Click);
             // 
             // frmQL
             // 
@@ -938,7 +938,6 @@
         private System.Windows.Forms.ComboBox Phai;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ToolStripMenuItem khôngHợpLệToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem inẤnDanhSáchSinhViênToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inẤnDanhSáchTheoLớpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inẤnDanhSáchTheoGiớiTínhToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bIểuĐồToolStripMenuItem;
@@ -947,6 +946,7 @@
         private System.Windows.Forms.ToolStripMenuItem biểuĐồCộtVàTrònTheoSỉSốCủaHọcSinhTừngLớpToolStripMenuItem;
         private System.Windows.Forms.ComboBox cbXepLoai;
         private System.Windows.Forms.Button btnXL;
+        private System.Windows.Forms.ToolStripMenuItem inẤnDanhSáchSinhViênToolStripMenuItem;
     }
 }
 

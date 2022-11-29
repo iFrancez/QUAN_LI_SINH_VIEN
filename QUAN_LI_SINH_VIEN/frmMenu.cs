@@ -28,6 +28,11 @@ namespace QLSV_TEST2
             frmAbout f = new frmAbout();
             f.ShowDialog();
         }
+        private void btnThanhVien_Click(object sender, EventArgs e)
+        {
+            frmThanhVien f = new frmThanhVien();
+            f.ShowDialog();
+        }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -44,5 +49,7 @@ namespace QLSV_TEST2
             DialogResult f = MessageBox.Show("Bạn có thực sự muốn thoát không ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (f == DialogResult.Yes) Application.Exit();
         }
+
+
     }
 }

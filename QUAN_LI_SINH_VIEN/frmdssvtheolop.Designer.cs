@@ -31,6 +31,8 @@ namespace QLSV_TEST2
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.DSsinhvientheolopBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dssinhvien_lop = new QLSV_TEST2.dssinhvien_lop();
             this.label1 = new System.Windows.Forms.Label();
             this.txtLop = new System.Windows.Forms.TextBox();
             this.btntim = new System.Windows.Forms.Button();
@@ -39,18 +41,27 @@ namespace QLSV_TEST2
             this.lblNgay = new System.Windows.Forms.Label();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.label3 = new System.Windows.Forms.Label();
-            this.dssinhvien_lop = new QLSV_TEST2.dssinhvien_lop();
-            this.DSsinhvientheolopBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DSsinhvientheolopTableAdapter = new QLSV_TEST2.dssinhvien_lopTableAdapters.DSsinhvientheolopTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dssinhvien_lop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DSsinhvientheolopBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dssinhvien_lop)).BeginInit();
             this.SuspendLayout();
+            // 
+            // DSsinhvientheolopBindingSource
+            // 
+            this.DSsinhvientheolopBindingSource.DataMember = "DSsinhvientheolop";
+            this.DSsinhvientheolopBindingSource.DataSource = this.dssinhvien_lop;
+            // 
+            // dssinhvien_lop
+            // 
+            this.dssinhvien_lop.DataSetName = "dssinhvien_lop";
+            this.dssinhvien_lop.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(330, 29);
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(250, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(133, 25);
             this.label1.TabIndex = 0;
@@ -59,7 +70,7 @@ namespace QLSV_TEST2
             // txtLop
             // 
             this.txtLop.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtLop.Location = new System.Drawing.Point(521, 26);
+            this.txtLop.Location = new System.Drawing.Point(441, 37);
             this.txtLop.Name = "txtLop";
             this.txtLop.Size = new System.Drawing.Size(220, 30);
             this.txtLop.TabIndex = 1;
@@ -67,7 +78,7 @@ namespace QLSV_TEST2
             // btntim
             // 
             this.btntim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btntim.Location = new System.Drawing.Point(799, 22);
+            this.btntim.Location = new System.Drawing.Point(719, 33);
             this.btntim.Name = "btntim";
             this.btntim.Size = new System.Drawing.Size(100, 39);
             this.btntim.TabIndex = 2;
@@ -127,16 +138,6 @@ namespace QLSV_TEST2
             this.label3.TabIndex = 4;
             this.label3.Text = "Thời gian:";
             // 
-            // dssinhvien_lop
-            // 
-            this.dssinhvien_lop.DataSetName = "dssinhvien_lop";
-            this.dssinhvien_lop.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // DSsinhvientheolopBindingSource
-            // 
-            this.DSsinhvientheolopBindingSource.DataMember = "DSsinhvientheolop";
-            this.DSsinhvientheolopBindingSource.DataSource = this.dssinhvien_lop;
-            // 
             // DSsinhvientheolopTableAdapter
             // 
             this.DSsinhvientheolopTableAdapter.ClearBeforeFill = true;
@@ -158,8 +159,8 @@ namespace QLSV_TEST2
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh sách sinh viên theo lớp";
             this.Load += new System.EventHandler(this.frmdssvtheolop_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dssinhvien_lop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DSsinhvientheolopBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dssinhvien_lop)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -91,6 +91,7 @@ namespace QLSV_TEST2
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.ForeColor = System.Drawing.Color.Blue;
             this.label1.Location = new System.Drawing.Point(252, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(144, 25);

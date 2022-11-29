@@ -32,7 +32,6 @@ namespace QLSV_TEST2
             //gan du lieu tu dataset lên datagridview
             return dtSet;
         }
-
         private void frmInAn_Load(object sender, EventArgs e)
         {
             lblThoigan.Text = DateTime.Now.ToLongTimeString();
@@ -44,7 +43,7 @@ namespace QLSV_TEST2
             sql = "Select * from HocSinh";//cmd
             DataSet ds;
             ds = ReadDataSet(sql);//đọc dữ liệu
-            //Khai báo chế độ xử lí báo cáo, trong trường hợp này lấy báo cáo ở local
+                                  //Khai báo chế độ xử lí báo cáo, trong trường hợp này lấy báo cáo ở local
             reportViewer2.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Local;
             //che do xem report
             reportViewer2.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout);//đặt chế độ xem trước khi in
@@ -57,7 +56,7 @@ namespace QLSV_TEST2
                 ReportDataSource rds = new ReportDataSource();
                 rds.Name = "HocSinh"; // ten dataset phải trùng với tên thiết kế trong datasource
                 rds.Value = ds.Tables[0];// dữ liệu bảng 0 trong dataset trong bộ nhớ => table HocSinh
-                //xoá dữ liệu của báo cáo cũ trong trường hợp người dùng thực hiện câu truy vấn khác
+                                         //xoá dữ liệu của báo cáo cũ trong trường hợp người dùng thực hiện câu truy vấn khác
                 reportViewer2.LocalReport.DataSources.Clear();
                 //add dữ liệu vào báo cáo 
                 reportViewer2.LocalReport.DataSources.Add(rds);

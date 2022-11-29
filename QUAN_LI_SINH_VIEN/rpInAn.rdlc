@@ -542,6 +542,7 @@
                 <Style>
                   <FontSize>14pt</FontSize>
                   <FontWeight>Bold</FontWeight>
+                  <Color>Maroon</Color>
                 </Style>
               </TextRun>
             </TextRuns>
@@ -552,7 +553,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox15</rd:DefaultName>
         <Top>0.24667in</Top>
-        <Left>1.27167in</Left>
+        <Left>1.43in</Left>
         <Height>0.25in</Height>
         <Width>3.21667in</Width>
         <ZIndex>1</ZIndex>
