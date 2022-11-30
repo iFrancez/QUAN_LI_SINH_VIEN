@@ -30,7 +30,7 @@ namespace QLSV_TEST2
             listTaiKhoan.Add(new Taikhoan("Thanh Phap", "123456"));
             listTaiKhoan.Add(new Taikhoan("Tri", "123456"));
             listTaiKhoan.Add(new Taikhoan("Thanh", "123456"));
-
+            listTaiKhoan.Add(new Taikhoan("Khiet", "123456"));
         }
     }
 }
