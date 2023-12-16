@@ -421,8 +421,6 @@
     <None Include="Resources\minimize.png" />
     <None Include="Resources\close.png" />
     <None Include="Resources\rm222batch2-mind-03.jpg" />
-    <None Include="Resources\TruongDHSP.jpg" />
-    <None Include="Resources\HCMUE.jpg" />
     <None Include="Resources\quaylai.jpg" />
     <None Include="Resources\book1.jpg" />
     <None Include="Resources\searchtext.png" />
@@ -442,7 +440,6 @@
     <None Include="Resources\NHAN1.ICO" />
     <None Include="Resources\PRINT.ICO" />
     <None Include="Resources\MISC02.ICO" />
-    <None Include="Resources\logoSuphamtphcm.png" />
     <None Include="Resources\user.jpg" />
     <None Include="Resources\user1.jpg" />
     <None Include="Resources\People.ico" />

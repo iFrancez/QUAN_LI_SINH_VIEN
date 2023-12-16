@@ -38,13 +38,11 @@ namespace QLSV_TEST2
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(123, 176);
+            this.label1.Location = new System.Drawing.Point(238, 191);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(572, 160);
+            this.label1.Size = new System.Drawing.Size(317, 96);
             this.label1.TabIndex = 0;
-            this.label1.Text = "47.01.104.154 - Phan Nguyễn Thanh Pháp\r\n47.01.104.145 - Chương Huỳnh Thế Nguyên\r\n" +
-    "47.01.104.217 - Trần Thiện Trí\r\n47.01.104.182 - Trần Thanh Sang\r\n47.01.104.050 -" +
-    " Trương Đinh Thiên Bảo\r\n";
+            this.label1.Text = "Nguyễn Văn A - 123456\r\nNguyễn Văn B - 123456\r\nNguyễn Văn C - 123456";
             // 
             // label2
             // 
@@ -52,11 +50,11 @@ namespace QLSV_TEST2
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(148, 104);
+            this.label2.Location = new System.Drawing.Point(247, 117);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(516, 32);
+            this.label2.Size = new System.Drawing.Size(286, 32);
             this.label2.TabIndex = 1;
-            this.label2.Text = "STT5_Retarded_Quản_Lí_Sinh_Viên\r\n";
+            this.label2.Text = "Quản_Lí_Sinh_Viên\r\n";
             // 
             // frmThanhVien
             // 

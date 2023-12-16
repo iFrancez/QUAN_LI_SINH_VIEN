@@ -27,10 +27,9 @@ namespace QLSV_TEST2
         DanhSachTK()
         {
             listTaiKhoan = new List<Taikhoan>();
-            listTaiKhoan.Add(new Taikhoan("Thanh Phap", "123456"));
-            listTaiKhoan.Add(new Taikhoan("Tri", "123456"));
-            listTaiKhoan.Add(new Taikhoan("Thanh", "123456"));
-            listTaiKhoan.Add(new Taikhoan("Khiet", "123456"));
+            listTaiKhoan.Add(new Taikhoan("Admin", "123456"));
+            listTaiKhoan.Add(new Taikhoan("Admin2", "1234567"));
+
         }
     }
 }
